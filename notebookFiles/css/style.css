@@ -30,11 +30,11 @@ body {
   transition: background-color 0.5s ease, transform 0.5s ease;
   z-index: 999;
 }
-.download-pdf:hover{
+.download-pdf:hover {
   background-color: #ccc;
   transform: scaleY(1.2);
 }
-.download-pdf a{
+.download-pdf a {
   text-decoration: none;
   color: white;
 }
@@ -260,6 +260,34 @@ body {
   height: 38px;
 }
 
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .wrapper,
+  .frontside-container,
+  .backside-container{
+    transform: scale(0.5);
+    transform-origin: top center;
+  }
+  .sheet{
+    margin: 0;
+    padding: 0;
+  }
+
+}
 
 @page {
   margin: 0;

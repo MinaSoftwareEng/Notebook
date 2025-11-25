@@ -269,11 +269,19 @@ body {
     transform: scale(0.5);
     transform-origin: top center;
   }
+  .download-pdf{
+    width: fit-content;
+  }
 }
 
 @media (max-width: 320px) {
+  .wrapper {
+    transform: scale(0.4);
+    transform-origin: top center;
+  }
   .download-pdf {
     font-size: 1.6em;
+    width: fit-content;
   }
 }
 

@@ -259,34 +259,24 @@ body {
   width: 30px;
   height: 38px;
 }
-
-
-/* Mobile phones */
-@media (max-width: 480px) {
-  body{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    overflow-x: hidden;
-  }
+@media (max-width: 480px){
   .wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-  }
-  .wrapper,
-  .frontside-container,
-  .backside-container{
     transform: scale(0.5);
     transform-origin: top center;
   }
-  .sheet{
-    margin: 0;
-    padding: 0;
+}
+@media (max-width: 375px){
+  .wrapper{
+    margin-left: 2em;
   }
-
+}
+@media (max-width: 320px){
+  .wrapper{
+    margin-left: 4em;
+  }
+  .download-pdf {
+    font-size: 1.6em;
+  }
 }
 
 @page {

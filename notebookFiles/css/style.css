@@ -266,11 +266,22 @@ body {
 }
 @media (max-width: 480px) {
   .wrapper {
+    transform: scale(0.54);
+    transform-origin: top center;
+  }
+  .download-pdf{
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
     transform: scale(0.5);
     transform-origin: top center;
   }
   .download-pdf{
-    width: fit-content;
+    font-size: 1.8em;
+    width: 100%;
   }
 }
 

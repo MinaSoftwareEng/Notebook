@@ -7,6 +7,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "MyFont", sans-serif;
   font-size: 16px;
@@ -109,7 +114,7 @@ body {
 
 .cover-page {
   width: 492px;
-  height: 300px;
+  height: auto;
   background-color: white;
   border-radius: 10px;
 }
@@ -259,21 +264,14 @@ body {
   width: 30px;
   height: 38px;
 }
-@media (max-width: 480px){
-  .wrapper{
+@media (max-width: 480px) {
+  .wrapper {
     transform: scale(0.5);
     transform-origin: top center;
   }
 }
-@media (max-width: 375px){
-  .wrapper{
-    margin-left: 2em;
-  }
-}
-@media (max-width: 320px){
-  .wrapper{
-    margin-left: 4em;
-  }
+
+@media (max-width: 320px) {
   .download-pdf {
     font-size: 1.6em;
   }
